@@ -1,0 +1,14 @@
+import React, { useState, useEffect } from "react";
+
+const FuryMode = ({ isActive }) => {
+  return (
+    <div
+      className={`fixed top-0 left-0 w-full h-full flex items-center justify-center
+        transition-all duration-500 ${isActive ? "bg-red-600 opacity-80" : "opacity-0"}`}
+    >
+      <h1 className="text-4xl font-bold text-white animate-pulse">🔥 БЕЗУМИЕ АКТИВИРОВАНО! 🔥</h1>
+    </div>
+  );
+};
+
+export default FuryMode;
